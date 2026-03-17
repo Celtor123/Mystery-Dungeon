@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/celso/Escritorio/ComputacionC/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/celso/Escritorio/ComputacionC/game
+CMAKE_BINARY_DIR = /home/celso/Escritorio/ComputacionC/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/celso/Escritorio/ComputacionC/game/CMakeFiles /home/celso/Escritorio/ComputacionC/game//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/celso/Escritorio/ComputacionC/game/build/CMakeFiles /home/celso/Escritorio/ComputacionC/game/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/celso/Escritorio/ComputacionC/game/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/celso/Escritorio/ComputacionC/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

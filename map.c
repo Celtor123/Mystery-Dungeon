@@ -1,4 +1,4 @@
-#include "mazmorra.h"
+#include "map.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL2/SDL.h>

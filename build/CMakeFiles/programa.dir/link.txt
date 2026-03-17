@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/programa.dir/main.c.o -o programa  -L/usr/lib/x86_64-linux-gnu  -lSDL2 
