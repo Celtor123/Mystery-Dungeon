@@ -36,6 +36,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  ".gitignore"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

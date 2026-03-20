@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/celso/Escritorio/ComputacionC/game/main.c" "CMakeFiles/programa.dir/main.c.o" "gcc" "CMakeFiles/programa.dir/main.c.o.d"
+  "/home/celso/Escritorio/ComputacionC/game/map.c" "CMakeFiles/programa.dir/map.c.o" "gcc" "CMakeFiles/programa.dir/map.c.o.d"
+  "/home/celso/Escritorio/ComputacionC/game/mazmorra.c" "CMakeFiles/programa.dir/mazmorra.c.o" "gcc" "CMakeFiles/programa.dir/mazmorra.c.o.d"
   )
 
 # Targets to which this target links.

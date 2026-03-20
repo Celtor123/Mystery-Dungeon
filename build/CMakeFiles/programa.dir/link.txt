@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/programa.dir/main.c.o -o programa  -L/usr/lib/x86_64-linux-gnu  -lSDL2 
+/usr/bin/cc -g CMakeFiles/programa.dir/map.c.o CMakeFiles/programa.dir/mazmorra.c.o CMakeFiles/programa.dir/main.c.o -o programa  -L/usr/lib/x86_64-linux-gnu  -lSDL2 

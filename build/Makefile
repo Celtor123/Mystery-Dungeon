@@ -153,6 +153,54 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/main.c.s
 .PHONY : main.c.s
 
+map.o: map.c.o
+.PHONY : map.o
+
+# target to build an object file
+map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/map.c.o
+.PHONY : map.c.o
+
+map.i: map.c.i
+.PHONY : map.i
+
+# target to preprocess a source file
+map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/map.c.i
+.PHONY : map.c.i
+
+map.s: map.c.s
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/map.c.s
+.PHONY : map.c.s
+
+mazmorra.o: mazmorra.c.o
+.PHONY : mazmorra.o
+
+# target to build an object file
+mazmorra.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mazmorra.c.o
+.PHONY : mazmorra.c.o
+
+mazmorra.i: mazmorra.c.i
+.PHONY : mazmorra.i
+
+# target to preprocess a source file
+mazmorra.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mazmorra.c.i
+.PHONY : mazmorra.c.i
+
+mazmorra.s: mazmorra.c.s
+.PHONY : mazmorra.s
+
+# target to generate assembly for a file
+mazmorra.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mazmorra.c.s
+.PHONY : mazmorra.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +213,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
+	@echo "... mazmorra.o"
+	@echo "... mazmorra.i"
+	@echo "... mazmorra.s"
 .PHONY : help
 
 
