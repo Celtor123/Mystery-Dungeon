@@ -1,3 +1,0 @@
-/home/celso/Escritorio/ComputacionC/game/build/CMakeFiles/programa.dir
-/home/celso/Escritorio/ComputacionC/game/build/CMakeFiles/edit_cache.dir
-/home/celso/Escritorio/ComputacionC/game/build/CMakeFiles/rebuild_cache.dir
