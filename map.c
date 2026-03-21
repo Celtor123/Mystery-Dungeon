@@ -8,11 +8,11 @@ void pintarSala(Mapa *mapa){
 if (mapa == NULL) { printf("Mapa es NULL\n"); return; }
 	crearSala(mapa);
 }
-/*
+
 void pintarPasillo(Mapa *mapa){
 if (mapa == NULL) { printf("Mapa es NULL\n"); return; }
-	for(int w=0;w<MAX_SALAS;++w){
+	/*for(int w=0;w<MAX_SALAS;++w){
 		
 		celda=mapa.lista[w]
-	}
-}*/
+	}*/
+}

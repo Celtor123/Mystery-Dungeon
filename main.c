@@ -8,13 +8,13 @@
 
 
 int main(int arc, char **argv){
-
+srand(time(NULL)); 
 Mapa mapa;
 mapa.count=0;
 int z;
-for(z=0;z<MAX_SALAS+2;z++){
+//for(z=0;z<MAX_SALAS+2;z++){
 	pintarSala(&mapa);
-}
+//}
 SDL_Init(SDL_INIT_VIDEO);
 SDL_Window* window = SDL_CreateWindow("Ventana de ejemplo",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,ANCHO_MAPA,ALTO_MAPA,SDL_WINDOW_SHOWN);
 SDL_Renderer* renderer = SDL_CreateRenderer(window,-1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
@@ -22,7 +22,7 @@ if (renderer == NULL) {
     printf("Error al crear renderer: %s\n", SDL_GetError());
     return 1; 
 }
-srand(time(NULL)); 
+
 SDL_Event e;
 int quit = 0;
 
