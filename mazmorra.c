@@ -11,17 +11,23 @@ void crearSala(Mapa *mapa){
 	while(mapa->count<MAX_SALAS){
 	//Valor boolean de si se superpone los rectángulos
 	Celda celda;
-	celda.rect.w=200+(int)((490 - 200 + 1.0) * rand() / (RAND_MAX + 1.0));
-	celda.rect.h=200+(int)((490 - 200 + 1.0) * rand() / (RAND_MAX + 1.0));
-	celda.rect.x=(int)(((ANCHO_MAPA-(celda.rect.w)) - 0 + 1.0) * rand() / (RAND_MAX + 1.0));
-	celda.rect.y=(int)(((ALTO_MAPA-(celda.rect.h)) - 0 + 1.0) * rand() / (RAND_MAX + 1.0));
+	celda.w=200+(int)((490 - 200 + 1.0) * rand() / (RAND_MAX + 1.0));
+	celda.h=200+(int)((490 - 200 + 1.0) * rand() / (RAND_MAX + 1.0));
+	celda.x=(int)(((ANCHO_MAPA-(celda.w)) - 0 + 1.0) * rand() / (RAND_MAX + 1.0));
+	celda.y=(int)(((ALTO_MAPA-(celda.h)) - 0 + 1.0) * rand() / (RAND_MAX + 1.0));
 	
 	solapa=0;
 	
 	
 	//Interseccion entre rectangulo añadido y Guardados
 	for( int y = 0; y < mapa->count; y++){
-		if(SDL_HasIntersection(&celda.rect,&mapa->lista[y].rect)){ solapa=1;break;}//El break es para evitar seguir observando otras colisiones
+		if(
+		celda.x < mapa->lista[y].x + mapa->lista[y].w &&
+		celda.x + celda.w > mapa->lista[y].x &&
+		celda.y < mapa->lista[y].y + mapa->lista[y].h &&
+		celda.y + celda.h > mapa->lista[y].y
+		)
+		{ solapa=1;break;}//El break es para evitar seguir observando otras colisiones
 	}
 	
 	if(solapa){

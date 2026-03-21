@@ -45,10 +45,10 @@ while(!quit){
         	SDL_RenderDrawPoint(renderer, (int)((1200 - 0 + 1.0) * rand() / (RAND_MAX + 1.0)),(int)((870 - 0 + 1.0) * rand() / (RAND_MAX + 1.0)));
     	}*/
     	
-	SDL_Rect rect=mapa.lista[0].rect;
-	SDL_Rect rect2=mapa.lista[1].rect;
-	SDL_Rect rect3=mapa.lista[2].rect;
-	SDL_Rect rect4=mapa.lista[3].rect;
+	SDL_Rect rect = {mapa.lista[0].x,mapa.lista[0].y,mapa.lista[0].w,mapa.lista[0].h};
+	SDL_Rect rect2 = {mapa.lista[1].x,mapa.lista[1].y,mapa.lista[1].w,mapa.lista[1].h};
+	SDL_Rect rect3 = {mapa.lista[2].x,mapa.lista[2].y,mapa.lista[2].w,mapa.lista[2].h};
+	SDL_Rect rect4 = {mapa.lista[3].x,mapa.lista[3].y,mapa.lista[3].w,mapa.lista[3].h};
 	SDL_Rect grupo []= {rect,rect2,rect3,rect4};
 	
 	SDL_RenderDrawRects(renderer,grupo,4);
