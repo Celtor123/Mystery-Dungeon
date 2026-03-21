@@ -14,7 +14,7 @@ typedef struct{
 //Estructura para la forma del mapa
 
 typedef struct{
-	SDL_Rect rect;
+	int x,y,w,h;
 } Celda;
 typedef struct{
 	Celda lista[(MAX_SALAS)];
